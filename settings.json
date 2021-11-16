@@ -54,7 +54,6 @@
     "prettier.printWidth": 777,
     "prettier.semi": true,
 
-    "vetur.ignoreProjectWarning": true,
     "volar.codeLens.references": false,
     "volar.icon.splitEditors": false,
     "volar.preferredTagNameCase": "kebab",
