@@ -1,0 +1,135 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.enableExperiments": false,
+    "editor.fontSize": 14,
+    "workbench.tree.indent": 13,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+    },
+    "breadcrumbs.enabled": false,
+    "editor.fontFamily": "Consolas",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": false,
+    "editor.wordWrap": "on",
+    "editor.minimap.showSlider": "always",
+    "editor.dragAndDrop": false,
+    "editor.hover.enabled": false,
+    "editor.minimap.renderCharacters": true,
+    // "editor.bracketPairColorization.enabled": true,  バグ直るまで無効化
+    "window.restoreWindows": "all",
+    "window.menuBarVisibility": "toggle",
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    "update.showReleaseNotes": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.banner": "always",
+    "files.hotExit": "off",
+    "files.simpleDialog.enable": true,
+    "files.insertFinalNewline": true,
+    "git.enabled": false,
+    "git.ignoreMissingGitWarning": true,
+    "terminal.integrated.defaultProfile.windows": "CentOS (WSL)",
+    "telemetry.telemetryLevel": "off",
+    "npm.fetchOnlinePackageInfo": false,
+    "extensions.ignoreRecommendations": false,
+    "csscomb.preset": "C:/Users/owner/.vscode/extensions/mrmlnc.vscode-csscomb-5.3.2/node_modules/csscomb/config/csscomb.json",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    "html.autoClosingTags": false,
+    "htmltagwrap.tag": "strong",
+    "htmltagwrap.autoDeselectClosingTag": false,
+
+    "prettier.tabWidth": 2,
+    "prettier.bracketSpacing": false,
+    "prettier.printWidth": 777,
+    "prettier.semi": true,
+
+    "vetur.ignoreProjectWarning": true,
+    "volar.codeLens.references": false,
+    "volar.icon.splitEditors": false,
+    "volar.preferredTagNameCase": "kebab",
+
+    "python.showStartPage": false,
+    "python.pythonPath": "C:\\Users\\owner\\anaconda3\\python.exe",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left",
+    },
+    "php.validate.executablePath": "C:\\php\\php.exe",
+    "php.executablePath": "C:\\php\\php.exe",
+    "php.validate.run": "onType",
+    "phpserver.browser": "",
+    "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
+
+    "dart.devToolsBrowser": "default",
+    "dart.lineLength": 0,
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+
+    "[plaintext]": {
+        "editor.quickSuggestions": false,
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+    },
+    "[css]": {
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+    ],
+    "eslint.format.enable": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        // "editor.formatOnSave": true,
+    },
+    "json.schemas": [],
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false,
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.formatOnType": true, //ESLintのautofixとは別で動く
+        // "editor.formatOnSave": true, //ESLintのautofixとは別で動く
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "yapf",
+    "[dart]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+    },
+
+    "settingsSync.ignoredSettings": [
+        "editor.fontSize"
+    ],
+    "settingsSync.keybindingsPerPlatform": false,
+}
