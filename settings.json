@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Monokai",
     "workbench.enableExperiments": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "workbench.tree.indent": 13,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.list.openMode": "doubleClick",
@@ -10,10 +10,12 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
     },
+    "workbench.settings.editor": "json",
     "breadcrumbs.enabled": false,
     "editor.fontFamily": "Consolas",
     "editor.detectIndentation": false,
     "editor.tabSize": 4,
+    "editor.tabCompletion": "on",
     "editor.formatOnType": true,
     "editor.formatOnPaste": false,
     "editor.wordWrap": "on",
@@ -21,7 +23,9 @@
     "editor.dragAndDrop": false,
     "editor.hover.enabled": false,
     "editor.minimap.renderCharacters": true,
-    // "editor.bracketPairColorization.enabled": true,  バグ直るまで無効化
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
     "window.restoreWindows": "all",
     "window.menuBarVisibility": "toggle",
     "explorer.compactFolders": false,
@@ -35,15 +39,16 @@
     "files.hotExit": "off",
     "files.simpleDialog.enable": true,
     "files.insertFinalNewline": true,
+    "debug.javascript.codelens.npmScripts": "never",
     "git.enabled": false,
     "git.ignoreMissingGitWarning": true,
-    "terminal.integrated.defaultProfile.windows": "CentOS (WSL)",
     "telemetry.telemetryLevel": "off",
     "npm.fetchOnlinePackageInfo": false,
     "extensions.ignoreRecommendations": false,
-    "csscomb.preset": "C:/Users/owner/.vscode/extensions/mrmlnc.vscode-csscomb-5.3.2/node_modules/csscomb/config/csscomb.json",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.list.indentationSize": "inherit",
 
     "html.autoClosingTags": false,
     "htmltagwrap.tag": "strong",
@@ -59,21 +64,15 @@
     "volar.preferredTagNameCase": "kebab",
 
     "python.showStartPage": false,
-    "python.pythonPath": "C:\\Users\\owner\\anaconda3\\python.exe",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left",
     },
-    "php.validate.executablePath": "C:\\php\\php.exe",
-    "php.executablePath": "C:\\php\\php.exe",
+    "php.validate.executablePath": "",
+    "php.executablePath": "",
     "php.validate.run": "onType",
     "phpserver.browser": "",
     "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
-
-    "dart.devToolsBrowser": "default",
-    "dart.lineLength": 0,
-    "dart.debugExternalLibraries": false,
-    "dart.debugSdkLibraries": false,
 
     "[plaintext]": {
         "editor.quickSuggestions": false,
@@ -86,9 +85,16 @@
     "[css]": {
         // "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
+    "[scss]": {
+        "editor.tabSize": 2,
+    },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     "eslint.validate": [
         "javascript",
@@ -98,11 +104,11 @@
     "eslint.format.enable": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
-        // "editor.formatOnSave": true,
+        "editor.formatOnSave": true,
     },
     "json.schemas": [],
     "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.json-language-features",
         "editor.formatOnSave": false,
     },
     "[vue]": {
@@ -112,19 +118,30 @@
         // "editor.formatOnSave": true, //ESLintのautofixとは別で動く
     },
     "[python]": {
-        "editor.formatOnSave": true,
+        // "editor.formatOnType": true,
+        // "editor.formatOnSave": true,
     },
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": true,
     "python.formatting.provider": "yapf",
+    "files.exclude": {
+        ".pylintrc": true,
+    },
+
     "[dart]": {
         "editor.formatOnType": true,
         "editor.formatOnSave": true,
+        // "editor.rulers": [
+        //     80
+        // ],
         "editor.selectionHighlight": false,
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false,
+    },
+    "[tf]": {
+        "editor.tabSize": 2,
     },
 
     "settingsSync.ignoredSettings": [
