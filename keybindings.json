@@ -191,5 +191,58 @@
         "key": "ctrl+cmd+down",
         "command": "-notebook.focusNextEditor",
         "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "pageup",
+        "command": "-cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "pagedown",
+        "command": "-cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+h",
+        "command": "extension.htmlTagWrap",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-extension.htmlTagWrap",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "cmd+k m",
+        "command": "-workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
     }
 ]
