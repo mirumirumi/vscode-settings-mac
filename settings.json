@@ -1,15 +1,12 @@
 {
+    "editor.fontSize": 13,
     "workbench.colorTheme": "Monokai",
     "workbench.enableExperiments": false,
-    "editor.fontSize": 13,
     "workbench.tree.indent": 13,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.list.openMode": "doubleClick",
     "workbench.startupEditor": "none",
     "workbench.activityBar.visible": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook",
-    },
     "workbench.settings.editor": "json",
     "breadcrumbs.enabled": false,
     "editor.fontFamily": "Consolas",
@@ -28,6 +25,7 @@
     "editor.guides.bracketPairs": "active",
     "window.restoreWindows": "all",
     "window.menuBarVisibility": "toggle",
+    "window.newWindowDimensions": "maximized",
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.autoReveal": false,
@@ -49,41 +47,69 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "markdown.extension.print.absoluteImgPath": false,
     "markdown.extension.list.indentationSize": "inherit",
-
+    "settingsSync.ignoredSettings": [
+        "editor.fontSize"
+    ],
+    "settingsSync.keybindingsPerPlatform": false,
     "html.autoClosingTags": false,
     "htmltagwrap.tag": "strong",
     "htmltagwrap.autoDeselectClosingTag": false,
-
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+    ],
+    "eslint.format.enable": true,
     "prettier.tabWidth": 2,
     "prettier.bracketSpacing": false,
     "prettier.printWidth": 777,
     "prettier.semi": true,
-
     "volar.codeLens.references": false,
     "volar.icon.splitEditors": false,
     "volar.preferredTagNameCase": "kebab",
-
     "python.showStartPage": false,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+    ],
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "none",
+        "reportUnusedClass": "information",
+        "reportUnusedFunction": "none",
+        "reportUnboundVariable": "warning",
+        // "reportMissingImports": "none",
+        // "reportUnknownVariableType": "none",
+        "reportUnknownMemberType": "none",
+    },
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left",
+    },
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "yapf",
+    "files.exclude": {
+        ".pylintrc": true,
     },
     "php.validate.executablePath": "",
     "php.executablePath": "",
     "php.validate.run": "onType",
     "phpserver.browser": "",
     "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
-
+    "intelephense.stubs": ["apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", "curl", "date", "dba", "dom", "enchant", "exif", "FFI", "fileinfo", "filter", "fpm", "ftp", "gd", "gettext", "gmp", "hash", "iconv", "imap", "intl", "json", "ldap", "libxml", "mbstring", "meta", "mysqli", "oci8", "odbc", "openssl", "pcntl", "pcre", "PDO", "pdo_ibm", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql", "Phar", "posix", "pspell", "readline", "Reflection", "session", "shmop", "SimpleXML", "snmp", "soap", "sockets", "sodium", "SPL", "sqlite3", "standard", "superglobals", "sysvmsg", "sysvsem", "sysvshm", "tidy", "tokenizer", "xml", "xmlreader", "xmlrpc", "xmlwriter", "xsl", "Zend OPcache", "zip", "zlib", "wordpress"],
     "[plaintext]": {
         "editor.quickSuggestions": false,
     },
+    "[markdown]":  {
+        "editor.quickSuggestions": true,
+        "editor.suggest.showKeywords": false,
+        "editor.suggest.showWords": false,
+    },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        // "editor.formatOnSave": true,
         "editor.tabSize": 2,
     },
     "[css]": {
-        // "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[scss]": {
         "editor.tabSize": 2,
@@ -96,17 +122,9 @@
         "editor.tabSize": 2,
         "editor.defaultFormatter": "vscode.typescript-language-features",
     },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "vue",
-    ],
-    "eslint.format.enable": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.formatOnSave": true,
     },
-    "json.schemas": [],
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.formatOnSave": false,
@@ -114,38 +132,22 @@
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
-        "editor.formatOnType": true, //ESLintのautofixとは別で動く
-        // "editor.formatOnSave": true, //ESLintのautofixとは別で動く
+        // "editor.formatOnType": true,
     },
     "[python]": {
         // "editor.formatOnType": true,
-        // "editor.formatOnSave": true,
+        "editor.semanticHighlighting.enabled": false,
     },
-    "python.linting.enabled": false,
-    "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "yapf",
-    "files.exclude": {
-        ".pylintrc": true,
-    },
-
-    "[dart]": {
-        "editor.formatOnType": true,
-        "editor.formatOnSave": true,
-        // "editor.rulers": [
-        //     80
-        // ],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false,
-    },
+    // "[dart]": {
+    //     "editor.formatOnType": true,
+    //     "editor.formatOnSave": true,
+    //     "editor.selectionHighlight": false,
+    //     "editor.suggest.snippetsPreventQuickSuggestions": false,
+    //     "editor.suggestSelection": "first",
+    //     "editor.tabCompletion": "onlySnippets",
+    //     "editor.wordBasedSuggestions": false,
+    // },
     "[tf]": {
         "editor.tabSize": 2,
     },
-
-    "settingsSync.ignoredSettings": [
-        "editor.fontSize"
-    ],
-    "settingsSync.keybindingsPerPlatform": false,
 }
